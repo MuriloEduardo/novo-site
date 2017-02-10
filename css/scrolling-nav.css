@@ -1,0 +1,229 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .navbar-default.top-nav-collapse {
+        background-color: rgba(248, 248, 248, .6);
+        border-color: rgba(231, 231, 231, .6);
+    }
+    .navbar-nav>li>a {
+        padding-top: 33px;
+        padding-bottom: 27px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        border-bottom: solid 5px transparent;
+    }
+    .navbar-default .navbar-nav>li>a,
+    .navbar-default .navbar-brand {
+        color: #fff;
+    }
+    .navbar-default .navbar-nav>.active>a {
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff;
+    }
+    .navbar-default .navbar-nav>.active>a:hover {
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        border-color: #fff;
+        color: #fff;
+    }
+    .navbar-default .navbar-brand:hover {
+        color: #fff;
+    }
+    .navbar-default.top-nav-collapse .navbar-brand span {
+        opacity: 0;
+    }
+    .navbar-default.top-nav-collapse .navbar-nav>li>a{
+        color: #fbb82b;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+section,
+footer {
+    position: relative;
+}
+
+section:before,
+footer:before {
+    content: '';
+    height: 250px;
+    width: 150%;
+    transform: rotate(171deg);
+    position: absolute;
+    left: -125px;
+    top: -165px;
+    z-index: 10;
+}
+
+.after-intro:after {
+    content: '';
+    height: 250px;
+    width: 150%;
+    transform: rotate(171deg);
+    position: absolute;
+    left: -125px;
+    bottom: -80px;
+    z-index: 10;
+}
+
+.intro-section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(245, 136, 52, .9);
+    z-index: 2;
+}
+.intro-section:before {
+    content: none!important;
+}
+
+.intro-section {
+    height: 100%;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #e9ebee;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #e9ebee;
+}
+video {
+    width: 100%;
+    max-width: 100%;
+}
+.intro-section video {
+    z-index: 1;
+    position: relative;
+    margin: 0;
+}
+footer {
+    background-color: #1d1d1d;
+    min-height: 300px;
+}
+.contact-section:before,
+.about-section:before {
+    background-color: #e9ebee;
+}
+.services-section:before,
+.services-section.after-intro:after {
+    background-color: #fff;
+}
+footer:before {
+    background-color: #1d1d1d;
+}
+.navbar-brand>img {
+  height: 100%;
+  margin: 17.5px auto;
+  width: auto;
+}
+.navbar-brand span{
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+}
+.navbar-toggle {
+    z-index:3;
+}
+.fixed-aux-topbottom {
+    position: absolute;
+    right: 50px;
+    top: -260px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: rgba(255,255,255,.9);
+    z-index: 11;
+    color: #f58834;
+    text-align: center;
+}
+.fixed-aux-topbottom i {
+    font-size: 32px;
+    line-height: 60px;
+}
